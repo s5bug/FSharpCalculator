@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpCalculator.Core.Tests", "FSharpCalculator\FSharpCalculator.Core.Tests\FSharpCalculator.Core.Tests.fsproj", "{514CBDDC-C3AE-4F8F-BF6E-6D5A3EB9626F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpCalculator.Core", "FSharpCalculator\FSharpCalculator.Core\FSharpCalculator.Core.fsproj", "{6062A49A-C978-44C3-83DD-F49689DCB745}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpCalculator", "FSharpCalculator\FSharpCalculator\FSharpCalculator.fsproj", "{0EAEF1AA-0E01-4FEF-9D7D-C887B1B4DE00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{514CBDDC-C3AE-4F8F-BF6E-6D5A3EB9626F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514CBDDC-C3AE-4F8F-BF6E-6D5A3EB9626F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514CBDDC-C3AE-4F8F-BF6E-6D5A3EB9626F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514CBDDC-C3AE-4F8F-BF6E-6D5A3EB9626F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6062A49A-C978-44C3-83DD-F49689DCB745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6062A49A-C978-44C3-83DD-F49689DCB745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6062A49A-C978-44C3-83DD-F49689DCB745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6062A49A-C978-44C3-83DD-F49689DCB745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAEF1AA-0E01-4FEF-9D7D-C887B1B4DE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAEF1AA-0E01-4FEF-9D7D-C887B1B4DE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAEF1AA-0E01-4FEF-9D7D-C887B1B4DE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAEF1AA-0E01-4FEF-9D7D-C887B1B4DE00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

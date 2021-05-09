@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FSharp.Data" Version="4.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Calculator.fs" />
+    </ItemGroup>
+</Project>
