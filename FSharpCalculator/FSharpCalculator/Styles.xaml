@@ -5,4 +5,7 @@
   <Style Selector="TextBlock.resultText">
     <Setter Property="FontSize" Value="72.0" />
   </Style>
+  <Style Selector="Button.calcButton">
+    <Setter Property="FontSize" Value="24.0" />
+  </Style>
 </Styles>

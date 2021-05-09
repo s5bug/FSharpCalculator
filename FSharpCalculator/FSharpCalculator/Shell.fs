@@ -60,47 +60,36 @@ module Shell =
                         state, Cmd.none
                 | None ->
                     { inputString = Some ("0 " + button) }, Cmd.none
-
+    
+    
+    let makeButton (dispatch) (row: int) (column: int) (text: string) : Types.IView =
+        upcast Button.create
+            [ Grid.row row
+              Grid.column column
+              Button.content text
+              Button.onClick (fun _ -> dispatch (ButtonPress text))
+              Button.classes ["calcButton"] ]
+    
     let calculatorOneThroughNine (dispatch) : seq<Types.IView> =
         seq {
             for dig in 0..8 do
                 let text = string (dig + 1)
                 let column = dig % 3
                 let row = dig / 3
-                yield Button.create
-                    [ Grid.column column
-                      Grid.row row
-                      Button.content text
-                      Button.onClick (fun _ -> dispatch (ButtonPress text)) ]
+                yield makeButton dispatch row column text
         }
-        
+    
     let zeroButton (dispatch) : Types.IView =
-        upcast Button.create
-            [ Grid.column 0
-              Grid.row 3
-              Button.content "0"
-              Button.onClick (fun _ -> dispatch (ButtonPress "0")) ]
+        makeButton dispatch 3 0 "0"
     
     let decimalButton (dispatch) : Types.IView =
-        upcast Button.create
-            [ Grid.column 1
-              Grid.row 3
-              Button.content "."
-              Button.onClick (fun _ -> dispatch (ButtonPress ".")) ]
+        makeButton dispatch 3 1 "."
     
     let equalsButton (dispatch) : Types.IView =
-        upcast Button.create
-            [ Grid.column 2
-              Grid.row 3
-              Button.content "="
-              Button.onClick (fun _ -> dispatch (ButtonPress "=")) ]
+        makeButton dispatch 3 2 "="
     
     let makeOperator (dispatch) (row : int) (text: string) : Types.IView =
-        upcast Button.create
-            [ Grid.column 3
-              Grid.row row
-              Button.content text
-              Button.onClick (fun _ -> dispatch (ButtonPress text)) ]
+        makeButton dispatch row 3 text
     
     let operatorButtons (dispatch) : seq<Types.IView> =
         Seq.ofList ["+"; "-"; "*"; "/"]
